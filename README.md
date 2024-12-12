@@ -21,7 +21,21 @@ Sql Server Integration Service.
   *create slowly changing dimension (SCD) coulmns(start-date,end-date,Is-current)for each table and foreign-keys.   
   -Dimension Tables:Dim-Product,Dim-Customer,Dim-Territory,Dim-Date.  
   -Fact Table: Fact-Sales.  
-4-create package on ssis for dim-Product table (ETL) to load data on tableDim-product.  
+4-create package on ssis for dim-Product table (ETL) to load data on Dim-product table & Dim-customer table.  
 
 <img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-product.jpeg?raw=true">
-5-
+
+5-create slowly changing dimension for Dim-product table & Dim-customer table to audit(track) changes on rows.
+<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/SCD.jpeg?raw=true">
+
+6- creat ssis package for dim-territory table.
+
+<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-terrirtary.jpeg?raw=true">
+
+7-creat ssis package for dim-date table.
+
+<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-date.jpeg?raw=true">
+
+
+
+
