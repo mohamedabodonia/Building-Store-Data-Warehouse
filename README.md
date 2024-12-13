@@ -36,6 +36,10 @@ Sql Server Integration Service.
 
 <img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-date.jpeg?raw=true">
 
+8-
 
+9- create a dashboard for insightful visualizations supporting business requirements.
+
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/dashboard.jpeg?raw=true">
 
 
