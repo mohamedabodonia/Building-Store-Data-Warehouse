@@ -1,8 +1,31 @@
-# Sales-Data-Warehouse
+# Stores-Data-Warehouse
 
-# main Purpose
+# overview
+This project demonstrates the complete lifecycle of building a data warehouse, including ETL processes, data modeling, and visualization.    
+The solution was developed using SQL Server for database management, SSIS for data extraction, transformation, and loading (ETL), and Power BI for data visualization. 
 
-data Warehous main Purpose is to collect Data from multiple sources to help in creating reports from all sources.  
+Key Highlights:
+Database Restoration and Setup:
+
+Restored source database files into SQL Server and prepared the environment for warehouse development.
+Data Warehouse Design:
+
+Designed and created the structure of the data warehouse, including Fact and Dimension tables:
+Dimension Tables: Dim-Product, Dim-Customer, Dim-Territory, Dim-Date.
+Fact Table: Fact-Sales.
+Included Slowly Changing Dimension (SCD) attributes (Start-Date, End-Date, Is-Current) for tracking historical changes.
+**ETL Processes:**
+
+Built SSIS packages to load data into Dimension tables and implemented SCD logic for change tracking.
+Created separate ETL packages for each table: Dim-Product, Dim-Customer, Dim-Territory, Dim-Date, and Fact-Sales.
+
+**Data Visualization:**
+
+Developed interactive dashboards using Power BI to visualize insights from the Fact-Sales table, enabling data-driven decision-making.  
+This project highlights proficiency in SQL Server, ETL with SSIS, Data Warehousing concepts, and Power BI visualization to deliver end-to-end business intelligence solutions.  
+
+
+data Warehous main Purpose is to collect Data from multiple sources to help in creating reports from all sources.    
 
 # Tools used in projects  
 Sql server DB.  
