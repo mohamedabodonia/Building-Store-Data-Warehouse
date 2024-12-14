@@ -36,7 +36,7 @@ Power Query.
 
 # Data Warehouse Diagram
 
-<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/Diagram.jpg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/Diagram.jpg?raw=true">
 
 # Project Workflow 
 
