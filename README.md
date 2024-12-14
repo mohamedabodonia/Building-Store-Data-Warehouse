@@ -49,10 +49,10 @@ Power Query.
   -Fact Table: Fact-Sales.  
 4-create package on ssis for dim-Product table (ETL) to load data on Dim-product table & Dim-customer table.  
 
-<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-product.jpeg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/dim-product.jpeg?raw=true">
 
 5-create slowly changing dimension for Dim-product table & Dim-customer table to audit(track) changes on rows.
-<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/SCD.jpeg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/SCD.jpeg?raw=true">
 
 6- creat ssis package for dim-territory table.
 
