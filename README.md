@@ -7,8 +7,9 @@ The solution was developed using SQL Server for database management, SSIS for da
 Key Highlights:
 Database Restoration and Setup:
 
-Restored source database files into SQL Server and prepared the environment for warehouse development.
-Data Warehouse Design:
+Restored source database files into SQL Server and prepared the environment for warehouse development.  
+
+**Data Warehouse Design:**
 
 Designed and created the structure of the data warehouse, including Fact and Dimension tables:
 Dimension Tables: Dim-Product, Dim-Customer, Dim-Territory, Dim-Date.
