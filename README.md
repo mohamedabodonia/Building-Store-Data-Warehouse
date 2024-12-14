@@ -13,7 +13,7 @@ Data Warehouse Design:
 Designed and created the structure of the data warehouse, including Fact and Dimension tables:
 Dimension Tables: Dim-Product, Dim-Customer, Dim-Territory, Dim-Date.
 Fact Table: Fact-Sales.
-Included Slowly Changing Dimension (SCD) attributes (Start-Date, End-Date, Is-Current) for tracking historical changes.
+Included Slowly Changing Dimension (SCD) attributes (Start-Date, End-Date, Is-Current) for tracking historical changes.  
 **ETL Processes:**
 
 Built SSIS packages to load data into Dimension tables and implemented SCD logic for change tracking.
@@ -29,7 +29,9 @@ data Warehous main Purpose is to collect Data from multiple sources to help in c
 
 # Tools used in projects  
 Sql server DB.  
-Sql Server Integration Service.
+Sql Server Integration Service.  
+power BI.  
+Power Query.  
 
 # Data Warehouse Diagram
 
@@ -59,7 +61,11 @@ Sql Server Integration Service.
 
 <img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-date.jpeg?raw=true">
 
-8-
+8-create a ssis package to load data into fact-table 
+
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/fact-table%20packagae.jpeg?raw=true">
+
+
 
 9- create a dashboard for insightful visualizations supporting business requirements.
 
