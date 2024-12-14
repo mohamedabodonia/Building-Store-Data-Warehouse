@@ -60,11 +60,11 @@ Power Query.
 
 7-creat ssis package for dim-date table.
 
-<img src="https://github.com/mohamedabodonia/Building-Sales-Data-Warehouse/blob/main/dim-date.jpeg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/dim-date.jpeg?raw=true">
 
 8-create a ssis package to load data into fact-table 
 
-<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/fact-table%20packagae.jpeg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/fact-table%20packagae.jpeg?raw=true">
 
 
 
