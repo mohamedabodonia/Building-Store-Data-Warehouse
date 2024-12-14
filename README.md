@@ -70,6 +70,6 @@ Power Query.
 
 9- create a dashboard for insightful visualizations supporting business requirements.
 
-<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/dashboard.jpeg?raw=true">
+<img src="https://github.com/mohamedabodonia/Building-Store-Data-Warehouse/blob/main/ssis%20packages/dashboard.jpeg?raw=true">
 
 
