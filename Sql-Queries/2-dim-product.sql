@@ -2,13 +2,6 @@ USE EO_AdventureWorksDW2014
 
 go
 
--- dropping the foreign keys
-IF EXISTS (SELECT *
-           FROM   sys.foreign_keys
-           WHERE  NAME = 'fk_fact_sales_dim_product'
-                  AND parent_object_id = Object_id('fact_sales'))
-  ALTER TABLE fact_sales
-    DROP CONSTRAINT fk_fact_sales_dim_product;
 
 -- Drop and create the table
 IF EXISTS (SELECT *
@@ -77,29 +70,16 @@ VALUES      (0,
 SET IDENTITY_INSERT dim_product OFF
 
 -- create foreign key
-IF EXISTS (SELECT *
-           FROM   sys.tables
-           WHERE  NAME = 'fact_sales')
-  ALTER TABLE fact_sales
+
     ADD CONSTRAINT fk_fact_sales_dim_product FOREIGN KEY (product_key)
     REFERENCES
     dim_product(product_key);
 
 -- create indexes
-IF EXISTS (SELECT *
-           FROM   sys.indexes
-           WHERE  NAME = 'dim_product_product_id'
-                  AND object_id = Object_id('dim_product'))
-  DROP INDEX dim_product.dim_product_product_id;
 
 CREATE INDEX dim_product_product_id
   ON dim_product(product_id);
 
-IF EXISTS (SELECT *
-           FROM   sys.indexes
-           WHERE  NAME = 'dim_prodct_product_category'
-                  AND object_id = Object_id('dim_product'))
-  DROP INDEX dim_product.dim_prodct_product_category
 
 CREATE INDEX dim_prodct_product_category
   ON dim_product(product_category); 
