@@ -2,22 +2,9 @@ USE EO_AdventureWorksDW2014
 
 go
 
--- dropping the foreign keys
-IF EXISTS (SELECT *
-           FROM   sys.foreign_keys
-           WHERE  NAME = 'fk_fact_sales_dim_territory'
-                  AND parent_object_id = Object_id('fact_sales'))
-  ALTER TABLE fact_sales
-    DROP CONSTRAINT fk_fact_sales_dim_territory;
 
 -- Drop and create the table
-IF EXISTS (SELECT *
-           FROM   sys.objects
-           WHERE  NAME = 'dim_territory'
-                  AND type = 'U')
-  DROP TABLE dim_territory
 
-go
 
 CREATE TABLE dim_territory
   (
@@ -59,18 +46,13 @@ VALUES     (0,
 SET IDENTITY_INSERT dim_territory OFF
 
 -- create foreign key
-IF EXISTS (SELECT *
-           FROM   sys.tables
-           WHERE  NAME = 'fact_sales')
+
   ALTER TABLE fact_sales
     ADD CONSTRAINT fk_fact_sales_dim_territory FOREIGN KEY (territory_key)
     REFERENCES dim_territory(territory_key);
 
 -- create indexes
-IF EXISTS (SELECT *
-           FROM   sys.indexes
-           WHERE  NAME = 'dim_territory_territory_code'
-                  AND object_id = Object_id('dim_territory'))
+
   DROP INDEX dim_territory.dim_territory_territory_code;
 
 CREATE INDEX dim_territory_territory_id
