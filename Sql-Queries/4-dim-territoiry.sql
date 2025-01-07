@@ -53,7 +53,7 @@ SET IDENTITY_INSERT dim_territory OFF
 
 -- create indexes
 
-  DROP INDEX dim_territory.dim_territory_territory_code;
+
 
 CREATE INDEX dim_territory_territory_id
   ON dim_territory(territory_id); 
