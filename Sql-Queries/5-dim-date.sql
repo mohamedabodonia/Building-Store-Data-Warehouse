@@ -2,19 +2,8 @@ USE EO_AdventureWorksDW2014
 
 go
 
--- drop foreign key if exists
-IF EXISTS (SELECT *
-           FROM   sys.foreign_keys
-           WHERE  NAME = 'fk_fact_sales_dim_date'
-                  AND parent_object_id = Object_id('fact_sales'))
-  ALTER TABLE fact_sales
-    DROP CONSTRAINT fk_fact_sales_dim_date;
+--  create the table
 
--- drop and create the table
-IF EXISTS (SELECT *
-           FROM   sys.tables
-           WHERE  NAME = 'dim_date')
-  DROP TABLE dim_date;
 
 CREATE TABLE dim_date
   (
