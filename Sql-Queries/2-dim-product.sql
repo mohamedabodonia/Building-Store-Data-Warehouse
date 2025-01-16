@@ -34,10 +34,6 @@ CREATE TABLE dim_product
      CONSTRAINT pk_dim_product PRIMARY KEY CLUSTERED (product_key)
   );
 
--- Insert unknown record
-SET IDENTITY_INSERT dim_product ON
-
-
 
 SET IDENTITY_INSERT dim_product OFF
 
