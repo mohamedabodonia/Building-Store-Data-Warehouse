@@ -37,35 +37,7 @@ CREATE TABLE dim_product
 -- Insert unknown record
 SET IDENTITY_INSERT dim_product ON
 
-INSERT INTO dim_product
-            (product_key,
-             product_id,
-             product_name,
-             Product_description,
-             product_subcategory,
-             product_category,
-             color,
-             model_name,
-             reorder_point,
-             standard_cost,
-             source_system_code,
-             start_date,
-             end_date,
-             is_current)
-VALUES      (0,
-             0,
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             0,
-             0,
-             0,
-             '1900-01-01',
-             NULL,
-             1)
+
 
 SET IDENTITY_INSERT dim_product OFF
 
