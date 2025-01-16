@@ -31,32 +31,7 @@ CREATE TABLE dim_customer
     ADD CONSTRAINT fk_fact_sales_dim_customer FOREIGN KEY (customer_key)
     REFERENCES dim_customer(customer_key);
 
--- Insert unknown record
-SET IDENTITY_INSERT dim_customer ON
 
-INSERT INTO dim_customer
-            (customer_key,
-             customer_id,
-             customer_name,
-             address1,
-             address2,
-             city,
-             phone,
-             source_system_code,
-             start_date,
-             end_date,
-             is_current)
-VALUES      (0,
-             0,
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             'Unknown',
-             0,
-             '1900-01-01',
-             NULL,
-             1 )
 
 SET IDENTITY_INSERT dim_customer OFF
 
