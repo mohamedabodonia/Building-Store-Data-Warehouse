@@ -35,8 +35,6 @@ CREATE TABLE dim_product
   );
 
 
-SET IDENTITY_INSERT dim_product OFF
-
 -- create foreign key
 
     ADD CONSTRAINT fk_fact_sales_dim_product FOREIGN KEY (product_key)
